@@ -1,5 +1,9 @@
-<h1>Create Post</h1>
-<textarea rows="8" cols="80" [(ngModel)]="newPost"></textarea>
-<hr>
-<button (click)="onCreatePost()" type="button" name="button">Submit</button>
+
+<mat-card>
+  <mat-form-field>
+    <textarea matInput rows="8" cols="80" [(ngModel)]="newPost"></textarea>
+  </mat-form-field>
+  <button class="btn btn-primary" (click)="onCreatePost()" type="button" name="button">Submit</button>
+</mat-card>
+
 <p>{{ newPost }}</p>
